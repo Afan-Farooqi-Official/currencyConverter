@@ -1,12 +1,11 @@
 import { useState } from 'react'
 import { InputBox } from './components'
 import useCurrencyinfo from './hooks/useCurrencyinfo'
-import './App.css'
 
 function App() {
   const [amount, setAmount] = useState(0)
   const [from, setFrom] = useState('usd')
-  const [to, setTo] = useState('pak')
+  const [to, setTo] = useState('inr')
   const [convertedAmount, setConvertedAmount] = useState(0)
 
   const currencyInfo = useCurrencyinfo(from)
@@ -29,7 +28,7 @@ function App() {
     <div
             className="w-screen h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
             style={{
-                backgroundImage: `url('https://www.pinterest.com/pin/111464159523725169/')`,
+                backgroundImage: `url('https://i.pinimg.com/736x/2e/3d/68/2e3d6845011de0d24c13dd1e1028a2ff.jpg`,
             }}
         >
             <div className="w-full">
